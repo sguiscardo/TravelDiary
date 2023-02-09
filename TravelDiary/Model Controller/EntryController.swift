@@ -34,7 +34,9 @@ class EntryController {
         
     }
     
-    func delete() {
+    func delete(entryToDelete: Entry) {
+        guard let index = entries.firstIndex(of: entryToDelete) else {return}
+        entries.remove(at: index)
         save()
         
     }
