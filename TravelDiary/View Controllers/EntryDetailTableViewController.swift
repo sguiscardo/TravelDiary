@@ -24,6 +24,9 @@ class EntryDetailTableViewController: UITableViewController {
     // MARK: - Actions
     
     @IBAction func saveButtonTapped(_ sender: Any) {
+        //update function here to update the information
+        
+        
     }
     
     // MARK: - Table view data source
