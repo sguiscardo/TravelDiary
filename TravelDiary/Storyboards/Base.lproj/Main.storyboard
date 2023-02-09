@@ -59,6 +59,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="entryAddressLabel" destination="hcX-vf-tXP" id="oG9-4w-35s"/>
+                                    <outlet property="entryDateLabel" destination="grB-6O-RG5" id="JbP-DK-xB4"/>
+                                    <outlet property="entryNameLabel" destination="qwE-N3-JSL" id="Lld-Qa-K6d"/>
                                     <segue destination="9sb-Li-bA7" kind="show" identifier="toDetailVC" id="Sfx-oq-yTW"/>
                                 </connections>
                             </tableViewCell>
@@ -142,8 +145,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wAl-K8-VEU">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="gfV-r5-BlH"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="gfV-r5-BlH">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="9sb-Li-bA7" id="l4r-3T-frM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="entryAddressTextField" destination="Uhp-hh-jlK" id="vJS-1V-8YL"/>
+                        <outlet property="entryBodyTextView" destination="Daw-Zq-Xig" id="Vcv-T3-KpZ"/>
+                        <outlet property="entryDateLabel" destination="rEs-Gi-2bD" id="KFU-jp-qqB"/>
+                        <outlet property="entryTitleTextField" destination="l7u-gM-WXL" id="M5F-BI-fqK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7h-tU-jl0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
