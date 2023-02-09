@@ -15,5 +15,12 @@ class EntryTableViewCell: UITableViewCell {
     @IBOutlet weak var entryAddressLabel: UILabel!
     @IBOutlet weak var entryDateLabel: UILabel!
     
-    
+    func updateView(with entryToDisplay: Entry) {
+        entryNameLabel.text = entryToDisplay.title
+        entryAddressLabel.text = entryToDisplay.address
+        entryDateLabel.text = entryToDisplay.entryDate.stringValue()
+        
+        
+        
+    }
 }
