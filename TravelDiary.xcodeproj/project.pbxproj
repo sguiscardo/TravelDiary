@@ -13,6 +13,9 @@
 		413AA7FA2724B794008D6631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413AA7F92724B794008D6631 /* Assets.xcassets */; };
 		413AA7FD2724B794008D6631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413AA7FB2724B794008D6631 /* LaunchScreen.storyboard */; };
 		413AA81527273B77008D6631 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413AA81427273B77008D6631 /* DateHelper.swift */; };
+		93DC7C9A299579C200B92A9C /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC7C99299579C200B92A9C /* EntryListTableViewController.swift */; };
+		93DC7C9D29957A5400B92A9C /* EntryDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC7C9C29957A5400B92A9C /* EntryDetailTableViewController.swift */; };
+		93DC7C9F29957A9400B92A9C /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC7C9E29957A9400B92A9C /* EntryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		413AA7FC2724B794008D6631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413AA7FE2724B794008D6631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413AA81427273B77008D6631 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		93DC7C99299579C200B92A9C /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		93DC7C9C29957A5400B92A9C /* EntryDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailTableViewController.swift; sourceTree = "<group>"; };
+		93DC7C9E29957A9400B92A9C /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		413AA7EF2724B792008D6631 /* TravelDiary */ = {
 			isa = PBXGroup;
 			children = (
+				93DC7C9B299579CE00B92A9C /* View Controllers */,
 				413AA81327273B5A008D6631 /* Helper Files */,
 				413AA80527271158008D6631 /* Resources */,
 				413AA80427271142008D6631 /* Storyboards */,
@@ -89,6 +96,24 @@
 				413AA81427273B77008D6631 /* DateHelper.swift */,
 			);
 			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		93DC7C9B299579CE00B92A9C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93DC7C99299579C200B92A9C /* EntryListTableViewController.swift */,
+				93DC7C9C29957A5400B92A9C /* EntryDetailTableViewController.swift */,
+				93DC7CA029957B8D00B92A9C /* Custom Views */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		93DC7CA029957B8D00B92A9C /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				93DC7C9E29957A9400B92A9C /* EntryTableViewCell.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93DC7C9F29957A9400B92A9C /* EntryTableViewCell.swift in Sources */,
+				93DC7C9D29957A5400B92A9C /* EntryDetailTableViewController.swift in Sources */,
 				413AA7F12724B792008D6631 /* AppDelegate.swift in Sources */,
 				413AA7F32724B792008D6631 /* SceneDelegate.swift in Sources */,
+				93DC7C9A299579C200B92A9C /* EntryListTableViewController.swift in Sources */,
 				413AA81527273B77008D6631 /* DateHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +341,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4J7B9732LY;
+				DEVELOPMENT_TEAM = GSQU7BHG9R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TravelDiary/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -341,7 +369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4J7B9732LY;
+				DEVELOPMENT_TEAM = GSQU7BHG9R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TravelDiary/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
