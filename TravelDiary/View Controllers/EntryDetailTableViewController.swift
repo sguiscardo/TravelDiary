@@ -44,11 +44,16 @@ class EntryDetailTableViewController: UIViewController {
               let address = entryAddressTextField.text,
               let body = entryBodyTextView.text else {return}
    
-//        let address = entryAddressTextField.text ?? "There is no address"
-        
-        EntryController.sharedInstance.createFunction(title: title, addy: address, body: body)
-        navigationController?.popViewController(animated: true)
+        if let entry = entryReciever {//if line 25 has a value, the user has selected the call, and our segue has sent over the selected 'Entry'
+            EntryController.sharedInstance.updateFunction(entryToUpdate: entry, newTitle: title, newAddress: address, newBody: body)
+        } else {//Else, line 25 does NOT have a value, the user did not select a call, the user must have selexted the add entry button.
+            EntryController.sharedInstance.createFunction(title: title, addy: address, body: body)
+            
+        }
+        navigationController?.popViewController(animated: true) //pop the view controller(basically go back to the screen that was there before. like going back on a website. 
     }
     
-    
+//    let address = entryAddressTextField.text ?? "There is no address"
 }
+//EntryController.sharedInstance.createFunction(title: title, addy: address, body: body)
+//navigationController?.popViewController(animated: true)
